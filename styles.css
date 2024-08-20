@@ -1,0 +1,142 @@
+body {
+    background-color: #f7f6f2;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #222;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#addTaskButton:hover {
+    background-color: #e6b800;
+}
+
+.task-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-list {
+    width: 48%;
+}
+
+.task-list h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    color: #666;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    background-color: #d4edda;
+    text-decoration: line-through;
+}
+
+li span {
+    flex: 1;
+}
+
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}
+
+.complete-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.complete-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
